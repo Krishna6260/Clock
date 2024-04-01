@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgb(255, 255, 255);
+            background: linear-gradient(0deg, #ffffff 10%, #ffffff 100%);
+
+
+        }
+
+        .secon {
+            border-radius: 50%;
+            transform-origin: bottom;
+        }
+
+        .minut {
+            border-radius: 50%;
+            transform-origin: bottom;
+
+        }
+
+        .hour {
+            border-radius: 50%;
+            transform-origin: bottom;
+
+        }
+
+        span {
+            font-size: 20px;
+            position: absolute;
+            transform: rotate(calc(30deg * var(--i)));
+            inset: 15px;
+            color: rgb(77, 77, 77);
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        span b {
+            transform: rotate(calc(-30deg * var(--i)));
+            display: inline-block;
+            /* text-shadow: 0px 3px 18px rgba(60, 59, 59, 0.9); */
+
+        }
+
+        .watch {
+            transition: 0.3s;
+        }
+
+        .watch:hover {
+            scale: 1.2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="display: flex; gap: 30px; flex-wrap: wrap; justify-content: center;">
+
+        <div class="watch"
+            style="width: 200px; height: 200px; background: linear-gradient(90deg, #afaeae 0%, #e4e5e6 100%); border-radius: 50%; border: px solid rgb(202, 202, 202); position: relative; display: flex; justify-content: center ;  align-items: center; padding: 140px; box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;">
+
+
+
+
+            <div style="width: 7px; height: 40px; background-color: rgb(26, 26, 26); position: absolute; bottom: 50%; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+                class="hour">
+            </div>
+
+
+
+
+            <div
+                style="width: 13px; height: 13px; background-color: rgb(75, 74, 74); border-radius: 50%; position: absolute; display: flex; justify-content: center; align-items: center; box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;">
+
+                <div
+                    style="width: 7px; height: 7px; background-color: rgb(207, 207, 207); border-radius: 50%; position: absolute;">
+                </div>
+            </div>
+
+            <span style="--i:1;"><b>1</b></span>
+            <span style="--i:2;"><b>2</b></span>
+            <span style="--i:3;"><b>3</b></span>
+            <span style="--i:4;"><b>4</b></span>
+            <span style="--i:5;"><b>5</b></span>
+            <span style="--i:6;"><b>6</b></span>
+            <span style="--i:7;"><b>7</b></span>
+            <span style="--i:8;"><b>8</b></span>
+            <span style="--i:9;"><b>9</b></span>
+            <span style="--i:10;"><b>10</b></span>
+            <span style="--i:11;"><b>11</b></span>
+            <span style="--i:12;"><b>12</b></span>
+
+        </div>
+
+
+        <div class="watch"
+            style="width: 200px; height: 200px; background: linear-gradient(90deg, #ffdd56 0%, #faffcb 100%); border-radius: 50%; border: px solid rgb(202, 202, 202); position: relative; display: flex; justify-content: center ;  align-items: center; padding: 140px; box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;">
+
+
+            <div style="width: 6px; height: 70px; background-color: rgb(80, 80, 80); position: absolute; bottom: 50%; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+                class="minut">
+
+            </div>
+
+            <div
+                style="width: 13px; height: 13px; background-color: rgb(75, 74, 74); border-radius: 50%; position: absolute; display: flex; justify-content: center; align-items: center; box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;">
+
+                <div
+                    style="width: 7px; height: 7px; background-color: rgb(207, 207, 207); border-radius: 50%; position: absolute;">
+                </div>
+            </div>
+
+            <span style="--i:1;"><b>1</b></span>
+            <span style="--i:2;"><b>2</b></span>
+            <span style="--i:3;"><b>3</b></span>
+            <span style="--i:4;"><b>4</b></span>
+            <span style="--i:5;"><b>5</b></span>
+            <span style="--i:6;"><b>6</b></span>
+            <span style="--i:7;"><b>7</b></span>
+            <span style="--i:8;"><b>8</b></span>
+            <span style="--i:9;"><b>9</b></span>
+            <span style="--i:10;"><b>10</b></span>
+            <span style="--i:11;"><b>11</b></span>
+            <span style="--i:12;"><b>12</b></span>
+
+        </div>
+
+        <div class="watch"
+            style="width: 200px; height: 200px; background: linear-gradient(0deg, #fe6363 10%, #f4f3f3 100%); border-radius: 50%; border: px solid rgb(202, 202, 202); position: relative; display: flex; justify-content: center ;  align-items: center; padding: 140px; box-shadow: rgba(0, 0, 0, 0.4) 0px 60px 40px -7px;">
+
+
+            <div style="width: 4px; height: 90px; background-color: rgb(119, 119, 119); position: absolute; bottom: 50%; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+                class="secon">
+
+            </div>
+
+            <div
+                style="width: 13px; height: 13px; background-color: rgb(75, 74, 74); border-radius: 50%; position: absolute; display: flex; justify-content: center; align-items: center; box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;">
+
+                <div
+                    style="width: 7px; height: 7px; background-color: rgb(207, 207, 207); border-radius: 50%; position: absolute;">
+                </div>
+            </div>
+
+            <span style="--i:1;"><b>1</b></span>
+            <span style="--i:2;"><b>2</b></span>
+            <span style="--i:3;"><b>3</b></span>
+            <span style="--i:4;"><b>4</b></span>
+            <span style="--i:5;"><b>5</b></span>
+            <span style="--i:6;"><b>6</b></span>
+            <span style="--i:7;"><b>7</b></span>
+            <span style="--i:8;"><b>8</b></span>
+            <span style="--i:9;"><b>9</b></span>
+            <span style="--i:10;"><b>10</b></span>
+            <span style="--i:11;"><b>11</b></span>
+            <span style="--i:12;"><b>12</b></span>
+
+        </div>
+
+
+    </div>
+
+    <h1
+        style="letter-spacing: 4px; word-spacing: 10px; font-family:'Courier New', Courier, monospace, sans-serif; line-height: 2; text-align: center; color: rgb(64, 63, 63); padding: 10px; margin-top: 40px; font-size: 35px; text-shadow: 3px 10px 25px rgba(78, 78, 78, 0.9);">
+        “Time slips away like grains of sand <br> never to return again.”
+    </h1>
+
+    <!-- <button onclick="textToAudio()">speak</button> -->
+
+    <script>
+        setInterval(function setdate() {
+            var secon = document.querySelector(".secon")
+            var minut = document.querySelector(".minut")
+            var hou = document.querySelector(".hour")
+
+            var d = new Date()
+
+            var secon1 = d.getSeconds()
+            var minut1 = d.getMinutes()
+            var hou1 = d.getHours()
+
+            secon.style.rotate = secon1 * 6 + "deg"
+            minut.style.rotate = minut1 * 6 + (secon1 * 6) / 60 + "deg"
+            hou.style.rotate = hou1 * 30 + (minut1 * 6) / 12 + "deg"
+
+            //   hEl.style.transform = "rotate("+hDeg+"deg)";
+            //   mEl.style.transform = "rotate("+mDeg+"deg)";
+            //   sEl.style.transform = "rotate("+sDeg+"deg)"; 
+
+        }, 1000)
+
+        // setInterval(
+        //     function textToAudio() {
+        //         // let msg = document.getElementById("text-to-speech").value;
+        //         var d = new Date()
+        //         var secon1 = d.getSeconds()
+        //         var minut1 = d.getMinutes()
+        //         var hou1 = d.getHours()
+
+
+        //         let speech = new SpeechSynthesisUtterance();
+        //         speech.lang = "hi-IN";
+
+        //         speech.text = hou1 + " " + minut1;
+        //         speech.volume = 1;
+        //         speech.rate = 0.85;
+        //         speech.pitch = 1;
+
+        //         window.speechSynthesis.speak(speech);
+        //     }, 5000)
+
+        // function textToAudio() {
+        //     // let msg = document.getElementById("text-to-speech").value;
+        //     var d = new Date()
+        //     var secon1 = d.getSeconds()
+        //     var minut1 = d.getMinutes()
+        //     var hou1 = d.getHours()
+
+
+        //     let speech = new SpeechSynthesisUtterance();
+        //     speech.lang = "hi-IN";
+
+        //     speech.text = hou1 + " " + minut1;
+        //     speech.volume = 1;
+        //     speech.rate = 0.85;
+        //     speech.pitch = 1;
+
+        //     window.speechSynthesis.speak(speech);
+        // }
+    </script>
+
+
+</body>
+
+</html>
